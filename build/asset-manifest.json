@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/countrypedia/static/css/main.69eda509.chunk.css",
+    "main.js": "/countrypedia/static/js/main.fe6ef0f4.chunk.js",
+    "main.js.map": "/countrypedia/static/js/main.fe6ef0f4.chunk.js.map",
+    "runtime-main.js": "/countrypedia/static/js/runtime-main.f586e0e6.js",
+    "runtime-main.js.map": "/countrypedia/static/js/runtime-main.f586e0e6.js.map",
+    "static/js/2.adc2fc33.chunk.js": "/countrypedia/static/js/2.adc2fc33.chunk.js",
+    "static/js/2.adc2fc33.chunk.js.map": "/countrypedia/static/js/2.adc2fc33.chunk.js.map",
+    "index.html": "/countrypedia/index.html",
+    "precache-manifest.de52061b976fb2a007ed7c718aafd99b.js": "/countrypedia/precache-manifest.de52061b976fb2a007ed7c718aafd99b.js",
+    "service-worker.js": "/countrypedia/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/countrypedia/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.adc2fc33.chunk.js.LICENSE.txt": "/countrypedia/static/js/2.adc2fc33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f586e0e6.js",
+    "static/js/2.adc2fc33.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.fe6ef0f4.chunk.js"
+  ]
+}
