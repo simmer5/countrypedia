@@ -4,12 +4,18 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 
 import SearchBar from './components/SearchBar'
 import ShowCountries from './components/ShowCountries'
 import ShowAll from './components/ShowAllCountries'
 import CountryData from './components/CountryData'
+
+const darkTheme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
+})
 
 const App = () => {
 	const [data, setdata] = useState([])
@@ -38,7 +44,7 @@ const App = () => {
 	}
 
 	return (
-		<>
+		<ThemeProvider theme={darkTheme}>
 			<Box sx={{ flexGrow: 1 }}>
 				<AppBar position='static'>
 					<Toolbar>
@@ -63,7 +69,7 @@ const App = () => {
 					</div>
 				)}
 			</Box>
-		</>
+		</ThemeProvider>
 	)
 }
 
