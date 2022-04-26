@@ -1,11 +1,18 @@
-import React from "react";
+import React from 'react'
+import TextField from '@mui/material/TextField'
 
 const SearcBar = ({ searchTerm, onChange }) => {
-  return (
-    <div>
-      <input type="text" value={searchTerm} onChange={onChange} />
-    </div>
-  );
-};
+	return (
+		<div>
+			<TextField
+				id='outlined-search'
+				label='Search field'
+				type='search'
+				value={searchTerm}
+				onChange={onChange}
+			/>
+		</div>
+	)
+}
 
-export default SearcBar;
+export default SearcBar

@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
 
 import SearchBar from './components/SearchBar'
 import ShowCountries from './components/ShowCountries'
@@ -34,19 +39,30 @@ const App = () => {
 
 	return (
 		<>
-			<SearchBar searchTerm={searchTerm} onChange={handleChange} />
-			<ShowAll handleShow={handelShowAll} />
-			<ShowCountries
-				countries={data}
-				searchTerm={searchTerm}
-				showAll={showAll}
-				handelClicked={handelClicked}
-			/>
-			{showClicked && (
-				<div style={{ position: 'fixed', top: '20vh', left: '50vw' }}>
-					<CountryData country={clickedData} />
-				</div>
-			)}
+			<Box sx={{ flexGrow: 1 }}>
+				<AppBar position='static'>
+					<Toolbar>
+						<Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+							Countrypedia
+						</Typography>
+					</Toolbar>
+				</AppBar>
+			</Box>
+			<Box sx={{ flexGrow: 1 }}>
+				<SearchBar searchTerm={searchTerm} onChange={handleChange} />
+				<ShowAll handleShow={handelShowAll} />
+				<ShowCountries
+					countries={data}
+					searchTerm={searchTerm}
+					showAll={showAll}
+					handelClicked={handelClicked}
+				/>
+				{showClicked && (
+					<div style={{ position: 'fixed', top: '20vh', left: '50vw' }}>
+						<CountryData country={clickedData} />
+					</div>
+				)}
+			</Box>
 		</>
 	)
 }
